@@ -16,7 +16,7 @@ public class BMICalc {
         driver.findElement(By.name("cc")).click();
         driver.findElement(By.name("desc")).getText();
         String test = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals(test, "Your category is Normal", "Random chimp event");
+        Assert.assertEquals(test, "Your category is Normal", "Normal category check(kg) is failed,review test data");
         driver.quit();
     }
 
@@ -30,7 +30,7 @@ public class BMICalc {
         driver.findElement(By.name("cc")).click();
         driver.findElement(By.name("desc")).getText();
         String test = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals(test, "Your category is Obese", "Random chimp event");
+        Assert.assertEquals(test, "Your category is Obese", "Obese category check(kg) is failed,review test data");
         driver.quit();
     }
 
@@ -44,7 +44,7 @@ public class BMICalc {
         driver.findElement(By.name("cc")).click();
         driver.findElement(By.name("desc")).getText();
         String normal = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals(normal, "Your category is Overweight", "Random chimp event");
+        Assert.assertEquals(normal, "Your category is Overweight", "Overweight category check(kg) is failed,review test data");
         driver.quit();
     }
 
@@ -58,7 +58,7 @@ public class BMICalc {
         driver.findElement(By.name("cc")).click();
         driver.findElement(By.name("desc")).getText();
         String normal = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals(normal, "Your category is Underweight", "Random chimp event");
+        Assert.assertEquals(normal, "Your category is Underweight", "Underweight category check(kg) is failed,review test data");
         driver.quit();
     }
 
@@ -72,7 +72,7 @@ public class BMICalc {
         driver.findElement(By.name("cc")).click();
         driver.findElement(By.name("desc")).getText();
         String normal = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals(normal, "Your category is Starvation", "Random chimp event");
+        Assert.assertEquals(normal, "Your category is Starvation", "Starvation category check(kg) is failed,review test data");
         driver.quit();
     }
 
@@ -89,7 +89,7 @@ public class BMICalc {
         driver.findElement(By.name("cc")).click();
         driver.findElement(By.name("desc")).getText();
         String normal = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals(normal, "Your category is Underweight", "Random chimp event");
+        Assert.assertEquals(normal, "Your category is Underweight", "Underweight category check(pounds) is failed,review test data");
         driver.quit();
     }
 
@@ -106,7 +106,7 @@ public class BMICalc {
         driver.findElement(By.name("cc")).click();
         driver.findElement(By.name("desc")).getText();
         String normal = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals(normal, "Your category is Starvation", "Random chimp event");
+        Assert.assertEquals(normal, "Your category is Starvation", "Starvation category check(pounds) is failed,review test data");
         driver.quit();
     }
 
@@ -123,7 +123,7 @@ public class BMICalc {
         driver.findElement(By.name("cc")).click();
         driver.findElement(By.name("desc")).getText();
         String normal = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals(normal, "Your category is Normal", "Random chimp event");
+        Assert.assertEquals(normal, "Your category is Normal", "Normal category check(pounds) is failed,review test data");
         driver.quit();
 
     }
@@ -141,7 +141,7 @@ public class BMICalc {
         driver.findElement(By.name("cc")).click();
         driver.findElement(By.name("desc")).getText();
         String normal = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals(normal, "Your category is Overweight", "Random chimp event");
+        Assert.assertEquals(normal, "Your category is Overweight", "Overweight category check(pounds) is failed,review test data");
         driver.quit();
 
     }
@@ -159,7 +159,7 @@ public class BMICalc {
         driver.findElement(By.name("cc")).click();
         driver.findElement(By.name("desc")).getText();
         String normal = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals(normal, "Your category is Obese", "Random chimp event");
+        Assert.assertEquals(normal, "Your category is Obese", "Obese category check(pounds) is failed,review test data");
         driver.quit();
     }
 
@@ -175,7 +175,7 @@ public class BMICalc {
         dropdown2.selectByVisibleText("1″");
         driver.findElement(By.name("desc")).getText();
         String normal = driver.findElement(By.name("ht")).getAttribute("value");
-        Assert.assertEquals(normal, "33", "Random chimp event");
+        Assert.assertEquals(normal, "33", "Height converter check is failed");
         driver.quit();
     }
 
@@ -188,7 +188,7 @@ public class BMICalc {
         Select dropdown = new Select(driver.findElement(By.name("opt1")));
         dropdown.selectByVisibleText("pounds");
         String normal = driver.findElement(By.name("wg")).getAttribute("value");
-        Assert.assertEquals(normal, "242", "Random chimp event");
+        Assert.assertEquals(normal, "242", "Weight converter check is failed");
         driver.quit();
     }
 
